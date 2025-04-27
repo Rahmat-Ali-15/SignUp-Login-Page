@@ -167,4 +167,8 @@ span{
     .login_page_link a{
         font-size: 13px;
     }
+    .modal_container{
+        padding: 0 20px;
+        height: 450px;
+    }
 }
