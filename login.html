@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="./login.css">
+</head>
+
+<body>
+    <div class="form_container">
+
+        <form onsubmit="loginValidation(event)">
+            <h1>Login</h1>
+            <div>
+                <label for="loginemail">Email</label>
+                <input type="email" name="User_Email" id="loginemail" placeholder="Email Id" required>
+            </div>
+            <div>
+                <label for="loginpassword">Password</label>
+                <input type="password" name="User_Password" id="loginpassword" placeholder="Password" required>
+            </div>
+            <div>
+                <input type="submit" value="Login" id="loginbtn">
+            </div>
+            <div class="sign_up_link">
+                <p>Don't have an account?</p>
+                <a href="./index.html">Sign Up</a>
+            </div>
+        </form>
+    </div>
+
+     <!-- Modal Structure for Signup details -->
+     <div class="modal_container" id="signupModal">
+        <div class="modal_content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2>Signup Details</h2>
+            <p id="signupDetails"></p>
+        </div>
+    </div>
+</body>
+<script src="./login.js"></script>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="form_container">
+        <form onsubmit="myValidation(event)">
+            <h1>Create Account</h1>
+            <div>
+                <label for="username">Username</label>
+                <input type="text" name="User_Name" placeholder="Please enter username" id="username">
+                <span class="username_error"></span>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="text" name="User_Email" id="email" placeholder="Please enter your email">
+                <span class="email_error"></span>
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" name="User_Password" id="password" placeholder="Enter your password">
+                <span class="password_error"></span>
+            </div>
+            <div>
+                <label for="c_password">Confirm Password</label>
+                <input type="password" name="User_Password" id="c_password" placeholder="Enter confirm password">
+                <span class="confirm_password_error"></span>
+            </div>
+            <div>
+                <label for="contact">Contact</label>
+                <input type="tel" name="User_Contact" id="contact" placeholder="Please enter your number">
+                <span class="contact_error"></span>
+            </div>
+            <div>
+                <input type="submit" value="Sign Up" class="btn" id="sign-up-btn">
+            </div>
+            <div class="login_page_link">
+                <p>Already have an account?</p>
+                <a href="./login.html">Login now</a>
+            </div>
+        </form>
+    </div>
+
+    <!-- modal part start from here. -->
+
+    <div class="modal_container">
+        <div class="img_p">
+            <img src="right_icon.png" alt="right_icon">
+            <p>SUCCESS</p>
+        </div>
+        <div class="btn_p">
+            <p>Congratulations, your account has been successfully created.</p>
+            <button type="button" id="continue_btn">Continue</button>
+        </div>
+       
+    </div>
+
+    <!-- modal part end here. -->
+     
+
+</body>
+<script src="./index.js"></script>
+
+</html>
